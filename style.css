@@ -1,0 +1,78 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: grid;
+    /* grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav "
+    "play play play play paly play "; */
+    grid-template-columns:repeat(11,1fr);
+    /* grid-template-rows:repeat(100,1fr); */
+}
+
+.nav{
+    grid-column:1/12;
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+.playground{
+    /* grid-row:2/24; */
+    grid-column:1/6 ;
+    /* background-color:gray; */
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 14vw 14vw 14vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    
+}
+
+.box:hover{
+    background-color: gray;
+}
+
+
+.control_panel{
+    /* grid-row:2/24; */
+    grid-column: 6/12;
+    background-color: chartreuse;
+    padding: 20px;
+}
+
+.play_box{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+
+.play_btn{
+    width:55px;
+    height:55px;
+}
+
+
+.footer{
+    background-color:yellow;
+    grid-column: 1/12;
+    text-align: center;
+}
